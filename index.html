@@ -3,9 +3,9 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
 		<link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
 		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
 		<title>Your New Application</title>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -27,11 +27,8 @@
 		<script src="cordova.js"></script>
 		<script type="application/javascript" src="js/jquery.min.js"></script>
 		<script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
-		<script type="application/javascript" src="popup/popup.min.js"></script>
 		<script type="application/javascript" src="js/index_user_scripts.js"></script>
-		<script type="application/javascript" src="justgage/js/raphael.min.js"></script>
-		<script type="application/javascript" src="justgage/js/justgage.min.js"></script>
-		<script type="application/javascript" src="justgage/gauges.js"></script>
+		<script type="application/javascript" src="js/jqm_subpage.js"></script>
 	</head>
 
 	<body>
@@ -39,69 +36,53 @@
 		<div class="uwrap">
 			<div class="upage" id="mainpage" data-role="page">
 				<div class="upage-outer">
-					<div data-role="header" class="container-group inner-element uib_w_6" data-uib="jquery_mobile/header" data-ver="0">
-						<h1>Helloo</h1>
+					<div data-role="header" class="container-group inner-element uib_w_1" data-uib="jquery_mobile/header" data-ver="0">
+						<h1>Pizza Bar</h1>
 						<div class="widget-container wrapping-col single-centered"></div>
-						<div class="widget-container content-area horiz-area wrapping-col left" fa-chevron-left=""><a class="widget uib_w_9" data-uib="jquery_mobile/button" data-ver="0" data-role="button" href="#uib_page_1" data-transition="slidedown" id="fa-chevron-left">Back Icon</a>
+						<div class="widget-container content-area horiz-area wrapping-col left"></div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_32 d-margins button_info button_map" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="info" href="#page_info" data-transition="turn" data-iconpos="top" id="button_info">Info</a>
 						</div>
-						<div class="widget-container content-area horiz-area wrapping-col right"></div>
 					</div>
 					<div class="upage-content" id="mainsub">
 
 						<div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="col uib_col_1 col-0_12-12 background headline_height" data-uib="layout/col" data-ver="0">
 								<div class="widget-container content-area vertical-col">
 
-									<div class="table-thing with-label widget uib_w_16 d-margins" data-uib="jquery_mobile/select" data-ver="0">
-										<label class="narrow-control label-inline">Group</label>
-										<div data-role="fieldgroup" class+ "wide-control"="">
-											<select>
-												<option>Option 1</option>
-												<option>Option 2</option>
-												<option>Option 3</option>
-											</select>
+									<div class="widget uib_w_33 d-margins headline" data-uib="media/text" data-ver="0" id="headline">
+										<div class="widget-container left-receptacle"></div>
+										<div class="widget-container right-receptacle"></div>
+										<div>
+											<p>Dostava Pizze na kućnu adresu</p>
 										</div>
-									</div>
-									<div data-role="collapsible-set" class="no_wrap widget uib_w_21 d-margins" data-uib="jquery_mobile/accordion" data-ver="0" data-collapsed-icon="plus" data-expanded-icon="minus">
-										<div data-role="collapsible" class="no_wrap widget uib_w_22" data-uib="jquery_mobile/collapsible" data-ver="0">
-											<h4>Collapsible</h4>
-											<div class="col uib_col_9 single-col" data-uib="layout/col" data-ver="0">
-												<div class="widget-container content-area vertical-col">
-													<span class="uib_shim"></span>
-												</div>
-											</div>
-										</div>
-										<div data-role="collapsible" class="no_wrap widget uib_w_23" data-uib="jquery_mobile/collapsible" data-ver="0">
-											<h4>Collapsible</h4>
-											<div class="col uib_col_10 single-col" data-uib="layout/col" data-ver="0">
-												<div class="widget-container content-area vertical-col">
-													<span class="uib_shim"></span>
-												</div>
-											</div>
-										</div>
-										<div data-role="collapsible" class="no_wrap widget uib_w_24" data-uib="jquery_mobile/collapsible" data-ver="0">
-											<h4>Collapsible</h4>
-											<div class="col uib_col_11 single-col" data-uib="layout/col" data-ver="0">
-												<div class="widget-container content-area vertical-col">
-													<span class="uib_shim"></span>
-												</div>
-											</div>
-										</div>
-									</div><a class="widget uib_w_1 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="action" href="#uib_page_1" data-transition="slide" data-iconpos="top">Helloo</a>
-									<div data-role="controlgroup" class="uib-jqm-flex widget-container widget uib_w_17 d-margins"
-									data-uib="jquery_mobile/button_group" data-ver="0">
-										<a class="widget uib_w_18" data-uib="jquery_mobile/button" data-ver="0" data-role="button">Button</a><a class="widget uib_w_19" data-uib="jquery_mobile/button" data-ver="0" data-role="button">Button</a><a class="widget uib_w_20" data-uib="jquery_mobile/button"
-										data-ver="0" data-role="button">Button</a>
-									</div>
-									<div class="widget uib_w_2 ui-content no_wrap outset-margin d-margins" data-uib="jquery_mobile/listview" data-ver="0">
+									</div><span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+					</div>
+					<div id="pizza_menu" class="upage-content hidden">
+
+						<div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+
+									<div class="widget uib_w_6 ui-content no_wrap outset-margin d-margins" data-uib="jquery_mobile/listview" data-ver="0">
 										<ul data-role="listview">
-											<li class="widget uib_w_3" data-uib="jquery_mobile/listitem" data-ver="0">
-												<h2>Listitem</h2>
-												<p>line1</p>
+											<li class="widget uib_w_7 button_background pizza pizza_line" data-uib="jquery_mobile/listitem" data-ver="0" id="pizza">
+												<h2>Vesuvio</h2>
+												<p><strong>(rajčica, sir, šunka) 
+												</strong>
+												</p>
+												<p>mala 38kn - velika 48kn - jumbo 88kn</p>
 											</li>
-											<li class="widget uib_w_4" data-uib="jquery_mobile/listitem" data-ver="0"><span>Listitem</span>
+											<li class="widget uib_w_8" data-uib="jquery_mobile/listitem" data-ver="0"><span>Listitem</span>
 											</li>
-											<li class="widget uib_w_5" data-uib="jquery_mobile/listitem" data-ver="0"><span>Listitem</span>
+											<li class="widget uib_w_9" data-uib="jquery_mobile/listitem" data-ver="0"><span>Listitem</span>
+											</li>
+											<li class="widget uib_w_10" data-uib="jquery_mobile/listitem" data-ver="0">
+												<h2>Vesuvio</h2>
+												<p>Vesuvio</p>
 											</li>
 										</ul>
 									</div><span class="uib_shim"></span>
@@ -109,76 +90,207 @@
 							</div>
 							<span class="uib_shim"></span>
 						</div>
+					</div>
+					<!-- /upage-content -->
 
-						<div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+					<div data-role="footer" data-position="fixed" class="container-group inner-element uib_w_3 footer" data-uib="jquery_mobile/footer" data-ver="0" id="footer">
+						<h1></h1>
+						<div class="widget-container wrapping-col single-centered">
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col left">
+
+							<a class="widget uib_w_11 d-margins pizzamenu_background" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="bullets" data-iconpos="top" href="#pizza_menu" data-transition="fade" id="pizzamenu_background">PizzaMenu</a>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right">
+
+							<a class="widget uib_w_4 d-margins button_background" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="phone" data-iconpos="top" id="button_background">Dostava</a>
+						</div>
+					</div>
+				</div>
+				<!-- /upage-outer -->
+
+			</div>
+			<div class="upage" id="pizza_menu" data-role="page">
+				<div class="upage-outer">
+					<div data-role="header" class="container-group inner-element uib_w_23" data-uib="jquery_mobile/header" data-ver="0">
+						<h1>Pizza Bar</h1>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left"></div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_24 d-margins button_info" data-uib="jquery_mobile/button" data-ver="0" data-role="button" href="#page_info" data-transition="turn" id="button_info">Info</a>
+						</div>
+					</div>
+					<div id="pizza_menusub" class="upage-content ">
+
+						<div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_4 col-0_12-12" data-uib="layout/col" data-ver="0">
 								<div class="widget-container content-area vertical-col">
 
-									<div data-role="collapsible" class="no_wrap widget uib_w_11" data-uib="jquery_mobile/collapsible" data-ver="0">
-										<h4>Collapsible</h4>
-										<div class="col uib_col_4 single-col" data-uib="layout/col" data-ver="0">
-											<div class="widget-container content-area vertical-col">
-												<span class="uib_shim"></span>
-											</div>
-										</div>
-									</div>
-									<div data-role="collapsible-set" class="no_wrap widget uib_w_12 d-margins" data-uib="jquery_mobile/accordion" data-ver="0" data-collapsed-icon="plus" data-expanded-icon="minus">
-										<div data-role="collapsible" class="no_wrap widget uib_w_13" data-uib="jquery_mobile/collapsible" data-ver="0">
-											<h4>Collapsible</h4>
-											<div class="col uib_col_5 single-col" data-uib="layout/col" data-ver="0">
-												<div class="widget-container content-area vertical-col">
-													<span class="uib_shim"></span>
-												</div>
-											</div>
-										</div>
-										<div data-role="collapsible" class="no_wrap widget uib_w_14" data-uib="jquery_mobile/collapsible" data-ver="0" data-collapsed-icon="minus" data-expanded-icon="action" data-theme="b">
-											<h4>Collapsible</h4>
-											<div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
-												<div class="widget-container content-area vertical-col">
-													<span class="uib_shim"></span>
-												</div>
-											</div>
-										</div>
-										<div data-role="collapsible" class="no_wrap widget uib_w_15" data-uib="jquery_mobile/collapsible" data-ver="0">
-											<h4>Collapsible</h4>
-											<div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
-												<div class="widget-container content-area vertical-col">
-													<span class="uib_shim"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="widget uib_w_10 scale-image d-margins" data-uib="media/img" data-ver="0">
-										<figure class="figure-align">
-											<img src="images/earthship.jpg" id="slika1">
-											<figcaption data-position="bottom"></figcaption>
-										</figure>
-									</div>
-									<span class="uib_shim"></span>
+									<div class="widget uib_w_27 ui-content no_wrap outset-margin d-margins" data-uib="jquery_mobile/listview" data-ver="0">
+										<ul data-role="listview">
+											<li class="widget uib_w_28 pizza_line" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Vesuvio</h2>
+												<p><strong>(rajčica, sir, šunka) </strong>
+												</p>
+												<p>mala: 38kn - velika: 48kn - jumbo: 86kn</p>
+											</li>
+											<li class="widget uib_w_29 pizza_line" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Funhgi</h2>
+												<p><strong>(rajčica, sir, šampinjoni) </strong>
+												</p>
+												<p>mala: 38kn - velika: 48kn - jumbo: 86</p>
+											</li>
+											<li class="widget uib_w_30" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Capriciosa</h2>
+												<p>(rajčica, sir, šunka, šampinjoni)</p>
+											</li>
+											<li class="widget uib_w_34" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Margerita</h2>
+												<p>(rajčica, sir)</p>
+											</li>
+											<li class="widget uib_w_35" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Tropicana</h2>
+												<p>(sir, ananas)</p>
+											</li>
+											<li class="widget uib_w_39" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Picante</h2>
+												<p>(rajčica, sir, šunka, špek, feferoni ljuti ili blagi)</p>
+											</li>
+											<li class="widget uib_w_38" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Quattro Stagioni</h2>
+												<p>(1/4 margerita, 1/4 capricosa, 1/4 vesuvio, 1/4 plodovi mora)</p>
+											</li>
+											<li class="widget uib_w_37" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Calzone - štruca</h2>
+												<p>(rajčica, sir, šunka) - preklopljena</p>
+											</li>
+											<li class="widget uib_w_43" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Quattro formaggi</h2>
+												<p>(rajčica, 4 vrste sira - gorgonzola, mozzarella, gaudela, tehla)</p>
+											</li>
+											<li class="widget uib_w_42" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Oro Goro</h2>
+												<p>(rajčica, sir, šunka, špek, jaje)</p>
+											</li>
+											<li class="widget uib_w_41" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Urnebes</h2>
+												<p>(rajčica, sir, čili, salama, šunka, češnjak)</p>
+											</li>
+											<li class="widget uib_w_40" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Plodovi mora</h2>
+												<p>(rajčica, sir, plodovi mora)</p>
+											</li>
+											<li class="widget uib_w_46" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Zagorska</h2>
+												<p>(rajčica, sir, salama, špek, vrhnje)</p>
+											</li>
+											<li class="widget uib_w_49" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Lovačka</h2>
+												<p>(rajčica, sir, lovačka kobasica, blagi feferoni, crveni luk)</p>
+											</li>
+											<li class="widget uib_w_47" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Sexy</h2>
+												<p>(rajčica, sir, šunka, šampinjoni, 2 jaja, hrenovka)</p>
+											</li>
+											<li class="widget uib_w_48" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Mexico</h2>
+												<p>(rajčica, sir, šunka, grah, špek, paprika)</p>
+											</li>
+											<li class="widget uib_w_44" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Vegetarijana</h2>
+												<p>(rajčica, sir, kukuruz, grašak, paprika)</p>
+											</li>
+											<li class="widget uib_w_51" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Dalmatina</h2>
+												<p>(rajčica, sir, slane srdelice)</p>
+											</li>
+											<li class="widget uib_w_50" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Tuna</h2>
+												<p>(rajčica, sir, tuna)</p>
+											</li>
+											<li class="widget uib_w_52" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Slavonska</h2>
+												<p>(rajčica, sir, kulen, vratina, feferoni)</p>
+											</li>
+											<li class="widget uib_w_45" data-uib="jquery_mobile/listitem" data-ver="0">
+												<h2>Pizza sa mljevenim mesom </h2>
+												<p>(sos, sir, meso, rikula)</p>
+											</li>
+											<li class="widget uib_w_36" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Lazanje</h2>
+												<p>(meso ili sa povrćem)</p>
+											</li>
+											<li class="widget uib_w_53" data-uib="jquery_mobile/listitem" data-ver="0" id="pizzalist">
+												<h2>Pečeno tijesto </h2>
+												<p>(...)</p>
+											</li>
+										</ul>
+									</div><span class="uib_shim"></span>
 								</div>
 							</div>
 							<span class="uib_shim"></span>
 						</div>
 					</div>
-					<!-- /upage-content -->
-
+					<div data-role="footer" data-position="fixed" class="container-group inner-element uib_w_22" data-uib="jquery_mobile/footer" data-ver="0">
+						<h1></h1>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left"><a class="widget uib_w_26 d-margins button_background pizzamenu_background" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="bullets" data-iconpos="top" id="pizzamenu_background">Cjenik</a>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_25 d-margins button_background" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="phone" data-iconpos="top" id="button_background">Dostava</a>
+						</div>
+					</div>
 				</div>
 				<!-- /upage-outer -->
-
 			</div>
-			<div class="upage" id="uib_page_1" data-role="page">
+			<div class="upage" id="page_info" data-role="page">
 				<div class="upage-outer">
+					<div data-role="header" class="container-group inner-element uib_w_16" data-uib="jquery_mobile/header" data-ver="0">
+						<h1>Pizza Bar</h1>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left"></div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_15 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="info" data-iconpos="top" href="#page_info" data-transition="turn">Info</a>
+						</div>
+					</div>
+					<div id="page_infosub" class="upage-content ">
 
-					<div id="uib_page_1sub" class="upage-content ">
-
-						<div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_2 col-0_12-12 bg" data-uib="layout/col" data-ver="0">
+						<div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
 								<div class="widget-container content-area vertical-col">
 
-									<a class="widget uib_w_8" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="arrow-l" data-theme="b" href="#mainpage" data-transition="slideup" data-iconpos="left" data-mini="true">Back</a><span class="uib_shim"></span>
+									<div class="widget uib_w_17 ui-content no_wrap outset-margin d-margins" data-uib="jquery_mobile/listview" data-ver="0">
+										<ul data-role="listview">
+											<li class="widget uib_w_18 pizza_line pizza button_background pizza_menu1" data-uib="jquery_mobile/listitem" data-ver="0" id="pizza_menu1">
+												<h2>Radno vrijeme:</h2>
+												<p><strong>pon - ned: 09-23 h </strong>
+												</p>
+												<p>za Novu godinu, Uskrs, Badnjak, Božić i Staru godinu ne radimo</p>
+											</li>
+											<li class="widget uib_w_21 pizza_line button_background" data-uib="jquery_mobile/listitem" data-ver="0">
+												<h2>Dostava</h2>
+												<p>Besplatna dostava u krugu 10 km</p>
+											</li>
+											<li class="widget uib_w_19" data-uib="jquery_mobile/listitem" data-ver="0">
+												<h2>Rezervacije</h2>
+												<p><strong>049/284-785</strong>
+												</p>
+												<p>Rezervacije stola primamo za minimalno 8 osoba. Molimo da nazovete najmanje dan ranije za rezervaciju</p>
+											</li>
+											<li class="widget uib_w_20" data-uib="jquery_mobile/listitem" data-ver="0">
+												<h2>Plaćanje</h2>
+												<p>Plaćanje je samo u gotovini.</p>
+											</li>
+										</ul>
+									</div><span class="uib_shim"></span>
 								</div>
 							</div>
 							<span class="uib_shim"></span>
+						</div>
+					</div>
+					<div data-role="footer" data-position="fixed" class="container-group inner-element uib_w_13" data-uib="jquery_mobile/footer" data-ver="0">
+						<h1></h1>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left"><a class="widget uib_w_31 d-margins pizza_menu1" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="bullets" data-iconpos="top" href="#pizza_menu" data-transition="turn" id="pizzamenu_background">PizzaMenu</a>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_14 d-margins button_background" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="phone" data-mini="true" id="button_background" data-iconpos="top">Dostava</a>
 						</div>
 					</div>
 				</div>
