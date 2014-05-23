@@ -29,6 +29,10 @@
 		<script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
 		<script type="application/javascript" src="js/index_user_scripts.js"></script>
 		<script type="application/javascript" src="js/jqm_subpage.js"></script>
+		<script type="application/javascript" src="sidebar/js/jquery.event.move.js"></script>
+		<script type="application/javascript" src="sidebar/js/jquery.event.swipe.js"></script>
+		<script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+		<script type="application/javascript" src="sidebar/js/swipe.js"></script>
 	</head>
 
 	<body>
@@ -39,8 +43,15 @@
 					<div data-role="header" class="container-group inner-element uib_w_1" data-uib="jquery_mobile/header" data-ver="0">
 						<h1>Pizza Bar</h1>
 						<div class="widget-container wrapping-col single-centered"></div>
-						<div class="widget-container content-area horiz-area wrapping-col left"></div>
-						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_32 d-margins button_info button_map" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="info" href="#page_info" data-transition="turn" data-iconpos="top" id="button_info">Info</a>
+						<div class="widget-container content-area horiz-area wrapping-col left">
+							<div class="widget uib_w_58 scale-image d-margins" data-uib="media/img" data-ver="0">
+								<figure class="figure-align">
+									<img src="images/logo1.png">
+									<figcaption data-position="bottom"></figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_32 d-margins button_info button_map" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="info" data-iconpos="left" id="button_info" href="#page_info" data-transition="fade">Info</a>
 						</div>
 					</div>
 					<div class="upage-content" id="mainsub">
@@ -49,11 +60,17 @@
 							<div class="col uib_col_1 col-0_12-12 background headline_height" data-uib="layout/col" data-ver="0">
 								<div class="widget-container content-area vertical-col">
 
+									<div class="widget uib_w_59 scale-image d-margins" data-uib="media/img" data-ver="0">
+										<figure class="figure-align">
+											<img src="images/delivery.jpg">
+											<figcaption data-position="bottom"></figcaption>
+										</figure>
+									</div>
 									<div class="widget uib_w_33 d-margins headline" data-uib="media/text" data-ver="0" id="headline">
 										<div class="widget-container left-receptacle"></div>
 										<div class="widget-container right-receptacle"></div>
 										<div>
-											<p>Dostava Pizze na kućnu adresu</p>
+											<p>Dostava Pizze na Kućnu Adresu</p>
 										</div>
 									</div><span class="uib_shim"></span>
 								</div>
@@ -113,10 +130,22 @@
 			<div class="upage" id="pizza_menu" data-role="page">
 				<div class="upage-outer">
 					<div data-role="header" class="container-group inner-element uib_w_23" data-uib="jquery_mobile/header" data-ver="0">
-						<h1>Pizza Bar</h1>
+						<h1>Cjenik</h1>
 						<div class="widget-container wrapping-col single-centered"></div>
-						<div class="widget-container content-area horiz-area wrapping-col left"></div>
-						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_24 d-margins button_info" data-uib="jquery_mobile/button" data-ver="0" data-role="button" href="#page_info" data-transition="turn" id="button_info">Info</a>
+						<div class="widget-container content-area horiz-area wrapping-col left">
+							<div class="widget uib_w_57 scale-image d-margins" data-uib="media/img" data-ver="0">
+								<figure class="figure-align">
+									<img src="images/logo1.png">
+									<figcaption data-position="bottom"></figcaption>
+								</figure>
+							</div>
+							<div class="widget uib_w_54 scale-image d-margins" data-uib="media/img" data-ver="0">
+								<figure class="figure-align">
+									<img src="">
+								</figure>
+							</div>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_24 d-margins button_info" data-uib="jquery_mobile/button" data-ver="0" data-role="button" href="#page_info" data-transition="turn" id="button_info" data-icon="info" data-iconpos="left">Info</a>
 						</div>
 					</div>
 					<div id="pizza_menusub" class="upage-content ">
@@ -244,10 +273,22 @@
 			<div class="upage" id="page_info" data-role="page">
 				<div class="upage-outer">
 					<div data-role="header" class="container-group inner-element uib_w_16" data-uib="jquery_mobile/header" data-ver="0">
-						<h1>Pizza Bar</h1>
+						<h1>Info</h1>
 						<div class="widget-container wrapping-col single-centered"></div>
-						<div class="widget-container content-area horiz-area wrapping-col left"></div>
-						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_15 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="info" data-iconpos="top" href="#page_info" data-transition="turn">Info</a>
+						<div class="widget-container content-area horiz-area wrapping-col left">
+							<div class="widget uib_w_56 scale-image d-margins" data-uib="media/img" data-ver="0">
+								<figure class="figure-align">
+									<img src="images/logo1.png">
+									<figcaption data-position="bottom"></figcaption>
+								</figure>
+							</div>
+							<div class="widget uib_w_55 scale-image d-margins" data-uib="media/img" data-ver="0">
+								<figure class="figure-align">
+									<img src="">
+								</figure>
+							</div>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"><a class="widget uib_w_15 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="info" data-iconpos="left" href="#page_info" data-transition="turn">Info</a>
 						</div>
 					</div>
 					<div id="page_infosub" class="upage-content ">
