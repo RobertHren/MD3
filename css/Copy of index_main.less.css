@@ -145,7 +145,7 @@ body:not(#afui) .uwrap,
 body:not(#afui) .upage,
 body:not(#afui) .upage-content {
   height: 100%;
-background: white;
+background: white !important;
 }
 body:not(#afui) .upage-outer {
   height: auto;
@@ -320,10 +320,11 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   .d-margins {
-    margin-top: 4px;
+    margin-top: 12px;
   }
   .wrapping-col > .d-margins {
     margin-left: 6px;
+    margin-right: 16px;
   }
 }
 .ui-btn-hidden {
